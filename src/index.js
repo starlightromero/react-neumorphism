@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './styles.module.css'
+import Input from './Input'
+import Button from './Button'
+import Decorator from './Decorator'
+import Container from './Container'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { Input, Button, Decorator, Container }

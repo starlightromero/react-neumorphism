@@ -1,0 +1,15 @@
+.Container {
+  margin: 10px;
+}
+
+.Container.Light {
+  background-color: var(--light);
+  box-shadow: inset 6px 6px 9px var(--light-shadow),
+    inset -6px -6px 9px var(--light-highlight);
+}
+
+.Container.Dark {
+  background-color: var(--dark);
+  box-shadow: inset 6px 6px 9px var(--dark-shadow),
+    inset -6px -6px 9px var(--dark-highlight);
+}

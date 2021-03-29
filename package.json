@@ -1,7 +1,7 @@
 {
-  "name": "react-neumorphism",
+  "name": "@starlightromero/react-neumorphism",
   "version": "1.0.0",
-  "description": "Neumorphism UI React Components",
+  "description": "A neumorphism React component library",
   "author": "starlightromero",
   "license": "MIT",
   "repository": "starlightromero/react-neumorphism",

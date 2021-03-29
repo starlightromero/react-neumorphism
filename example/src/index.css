@@ -1,3 +1,10 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +18,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.light {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 50%;
+}
+
+.light .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.light .top h1 {
+  color: #313131;
+  text-align: right;
+}
+
+.dark {
+  background-color: #313131;
+  height: 100%;
+  width: 50%;
+}
+
+.dark .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.dark .top h1 {
+  color: #f2f2f2;
+  text-align: left;
 }

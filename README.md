@@ -15,13 +15,10 @@ npm install --save react-neumorphism
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-neumorphism'
-import 'react-neumorphism/dist/index.css'
+import Button from 'react-neumorphism'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return <Button>Sign Up</Button>
 }
 ```
 

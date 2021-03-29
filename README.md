@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-neumorphism
+npm install --save @starlightromero/react-neumorphism
 ```
 
 ## Usage

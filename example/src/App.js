@@ -5,7 +5,7 @@ import {
   Decorator,
   Container
 } from '@starlightromero/react-neumorphism'
-import 'react-neumorphism/dist/index.css'
+import '@starlightromero/react-neumorphism/dist/index.css'
 
 const App = () => {
   return (

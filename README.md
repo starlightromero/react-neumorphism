@@ -15,7 +15,7 @@ npm install --save react-neumorphism
 ```jsx
 import React, { Component } from 'react'
 
-import Button from 'react-neumorphism'
+import Button from '@starlightromero/react-neumorphism'
 
 const App = () => {
   return <Button>Sign Up</Button>

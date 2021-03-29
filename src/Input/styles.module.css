@@ -1,0 +1,17 @@
+.Label {
+  cursor: text;
+  display: block;
+  font-family: inherit;
+  padding-left: 20px;
+  text-align: left;
+  z-index: 3;
+}
+
+.Input {
+  box-sizing: border-box;
+  border: 2px ridge transparent;
+  font-family: inherit;
+  padding-left: 20px;
+  text-align: left;
+  outline: none;
+}

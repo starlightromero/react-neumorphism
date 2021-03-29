@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import classes from './styles.module.css'
 
-export default ({ mode, width, label, fontSize }) => {
+const Input = ({ mode, width, label, fontSize }) => {
   const [value, setValue] = useState('')
   const labelClassNames = [classes.Label]
   const inputClassNames = [classes.Input]
@@ -78,3 +79,12 @@ export default ({ mode, width, label, fontSize }) => {
     </div>
   )
 }
+
+Input.propTypes = {
+  mode: PropTypes.oneOf(['light', 'dark']),
+  width: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  fontSize: PropTypes.number
+}
+
+export default Input

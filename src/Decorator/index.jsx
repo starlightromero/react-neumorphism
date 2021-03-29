@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default ({ mode, size }) => {
+const Decorator = ({ mode, size }) => {
   let styles
   const middleSize = (size / 4) * 3
   const middleMargin = (size - middleSize) / 2
@@ -62,3 +63,10 @@ export default ({ mode, size }) => {
     </div>
   )
 }
+
+Decorator.propTypes = {
+  mode: PropTypes.oneOf(['light', 'dark']),
+  size: PropTypes.number.isRequired
+}
+
+export default Decorator

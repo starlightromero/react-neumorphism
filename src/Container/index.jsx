@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classes from './styles.module.css'
 
-export default ({ mode, children, height, width, borderRadius, style }) => {
+const Container = ({ mode, children, height, width, borderRadius, style }) => {
   const containerClassNames = [classes.Container]
 
   if (mode === 'dark') {
@@ -23,3 +24,14 @@ export default ({ mode, children, height, width, borderRadius, style }) => {
     </div>
   )
 }
+
+Container.propTypes = {
+  mode: PropTypes.oneOf(['light', 'dark']),
+  children: PropTypes.arrayOf(PropTypes.element),
+  height: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  borderRadius: PropTypes.number,
+  style: PropTypes.object
+}
+
+export default Container

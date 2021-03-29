@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import classes from './styles.module.css'
 
-export default ({
+const Button = ({
   children,
   mode,
   fontSize,
@@ -93,3 +94,14 @@ export default ({
     </button>
   )
 }
+
+Button.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element),
+  mode: PropTypes.oneOf(['light', 'dark']),
+  fontSize: PropTypes.number,
+  borderRadius: PropTypes.number,
+  active: PropTypes.bool,
+  onClick: PropTypes.func
+}
+
+export default Button

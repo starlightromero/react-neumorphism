@@ -1,5 +1,10 @@
 import React from 'react'
-import { Input, Button, Decorator, Container } from 'react-neumorphism'
+import {
+  Input,
+  Button,
+  Decorator,
+  Container
+} from '@starlightromero/react-neumorphism'
 import 'react-neumorphism/dist/index.css'
 
 const App = () => {

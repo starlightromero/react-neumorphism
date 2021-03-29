@@ -1,0 +1,22 @@
+:root {
+  --light: #f2f2f2;
+  --light-highlight: rgba(255, 255, 255, 1);
+  --light-shadow: rgba(0, 0, 0, 0.18);
+  --dark: #313131;
+  --dark-highlight: rgba(96, 96, 96, 0.38);
+  --dark-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.Button {
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Button.Active:hover {
+  cursor: default;
+}
